@@ -23,7 +23,9 @@ roles:
 
 * License
 
-[[https://opensource.org/licenses/MIT][https://img.shields.io/badge/License-MIT-yellow.svg]]
+[[https://opensource.org/licenses/MIT][https://img.shields.io/badge/License-MIT-yellow.svg]
+
+MIT License, see [[https://opensource.org/licenses/MIT][HERE]] to see the full text.
 
 * Credits
 
