@@ -12,9 +12,15 @@
 This repository contains an Ansible role to install Xcode Command Line Tools (aka CLT) on macOS. This role is e.g. used
 in our [[https://github.com/asconix/macos-ansible-fai][Fully automatic installation of macOS via Ansible playbook]] as foundation along with further Ansible roles.
 
-* How to use the role
+* Requirements
 
-Use the role in a playbook as follows:
+The Ansible role has no specific pre-requisites except applying the role on a macOS system.
+
+* Role variables
+
+- =force_reinstall= :: Before installing Xcode Command Line Tools, they will be uninstalled first if already exists.
+
+* How to use the role
 
 #+BEGIN_SRC
 roles:
@@ -32,3 +38,32 @@ MIT License, see [[https://opensource.org/licenses/MIT][LICENSE]] to see the ful
 I would like to give spacial thanks to the following authors and creators of similar projects and articles that inspired me:
 
 - https://github.com/elliotweiser/ansible-osx-command-line-tools
+
+
+
+Role Variables
+--------------
+
+A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+
+Dependencies
+------------
+
+A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+
+Example Playbook
+----------------
+
+Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+
+    - hosts: servers
+      roles:
+         - { role: username.rolename, x: 42 }
+
+License
+-------
+
+BSD
+
+Author Information
+------------------
