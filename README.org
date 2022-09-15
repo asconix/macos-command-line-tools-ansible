@@ -1,0 +1,33 @@
+#+TITLE:       Ansible role to install Xcode Command Line Tools (CLT) on macOS
+#+AUTHOR:      Christoph Pilka
+#+EMAIL:       (concat "c.pilka" at-sign "asconix.com")
+#+DATE:        2022-09-15
+#+DESCRIPTION: Ansible role to install Xcode Command Line Tools (CLT) on macOS
+#+KEYWORDS:    Ansible, macOS, Xcode, Command Line Tools, CLT
+#+LANGUAGE:    en
+#+STARTUP:     showall
+#+MACRO:       MIT [[https://opensource.org/licenses/MIT][https://img.shields.io/badge/License-MIT-yellow.svg]
+
+* Description
+
+This repository contains an Ansible role to install Xcode Command Line Tools (aka CLT) on macOS. This role is e.g. used
+in our [[https://github.com/asconix/macos-ansible-fai][Fully automatic installation of macOS via Ansible playbook]] as foundation along with further Ansible roles.
+
+* How to use the role
+
+Use the role in a playbook as follows:
+
+#+BEGIN_SRC
+roles:
+  - name: asconix.macos-command-line-tools-ansible
+#+END_SRC
+
+* License
+
+{{{MIT}}}
+
+* Credits
+
+I would like to give spacial thanks to the following authors and creators of similar projects and articles that inspired me:
+
+- https://github.com/elliotweiser/ansible-osx-command-line-tools
